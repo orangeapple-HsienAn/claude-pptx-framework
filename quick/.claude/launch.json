@@ -4,7 +4,7 @@
     {
       "name": "Slide Preview",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["templates/preview/server.cjs"],
+      "runtimeArgs": ["templates/preview/server.cjs", "output/本週業務回顧"],
       "port": 3456
     }
   ]

@@ -8,6 +8,7 @@
 ## 投影片尺寸
 
 - **16:9（10" × 5.625"）**
+- pptxgenjs 請使用 `prs.layout = "LAYOUT_16x9"`（不是 LAYOUT_WIDE，LAYOUT_WIDE 是 13.33"×7.5"）
 
 ---
 
