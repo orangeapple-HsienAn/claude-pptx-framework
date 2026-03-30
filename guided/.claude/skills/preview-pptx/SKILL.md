@@ -72,3 +72,12 @@ cmd.exe /c start "" "output\專案名稱\檔案.pptx"
 - 伺服器設定在 `.claude/launch.json`，port 3456
 - 若 port 被佔用：`$env:PORT=3457; node templates/preview/server.cjs output/xxx`
 - `server.cjs` 會同時服務 output 子資料夾與 assets/ 裡的圖片素材
+
+## ⚠️ 預覽與實際成品的差異
+
+HTML 預覽版與最終 `.pptx` 可能有以下落差，屬正常現象：
+
+- **字型**：若使用者電腦未安裝 `Mochiy Pop One`，瀏覽器會自動替換字型，顯示效果會不同
+- **字距 / 行距**：HTML 渲染與 PowerPoint 的排版引擎不同，可能有細微差異
+- **圖片位置**：複雜的圖文排版在 HTML 版可能略有偏移
+- **以 .pptx 為準**：預覽僅供快速確認內容與結構，正式成品請用 PowerPoint 開啟 `.pptx` 確認
