@@ -27,7 +27,7 @@
 
 ## 工具規則
 - 生成 `.pptx`：使用 `pptxgenjs`（Node.js）
-- 預覽：用 PowerPoint COM 轉 PDF，再用 `display_pdf` 顯示
+- 預覽：生成 PPTX 同時產出 HTML 版，用 `preview_start` 啟動伺服器，`preview_screenshot` 截圖顯示在對話裡
 - 有範本在 `templates/`：解析後套用，可覆蓋 style-guide 預設值
 - 缺素材：留佔位色塊，告知後繼續生成
 - 成品放 `output/`
