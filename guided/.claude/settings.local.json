@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude --version)",
+      "Bash(cmd.exe /c \"claude --version\")",
+      "Bash(cmd.exe /c \"where claude && claude --version\")",
+      "Bash(node -e \"require\\(''pptxgenjs''\\)\")",
+      "Bash(npm install:*)",
+      "Bash(node -e \"require\\(''pptxgenjs''\\); console.log\\(''OK''\\)\")",
+      "Bash(python -c \"import docx\")",
+      "Bash(python3 -c \"import docx\")",
+      "Bash(py -c \"import docx\")",
+      "Bash(powershell -Command \"Test-Path ''C:\\\\Users\\\\brian\\\\Documents\\\\claude 分享\\\\templates\\\\preview\\\\server.cjs''\")",
+      "Bash(python -m markitdown \"templates/pptx/課程簡報模板_TEMPLATE.pptx\")",
+      "Bash(python \"C:\\\\Users\\\\brian\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\9b0493ab-d37d-4590-ae3e-1bf52679b647\\\\d19b8bf7-efa0-41cb-9f8c-83c63edb98d9\\\\skills\\\\pptx\\\\scripts\\\\thumbnail.py\" \"templates/pptx/課程簡報模板_TEMPLATE.pptx\")",
+      "Bash(SKILL_DIR=\"C:\\\\Users\\\\brian\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\9b0493ab-d37d-4590-ae3e-1bf52679b647\\\\d19b8bf7-efa0-41cb-9f8c-83c63edb98d9\\\\skills\\\\pptx\")",
+      "Bash(python \"$SKILL_DIR/scripts/office/soffice.py\" --headless --convert-to pdf \"templates/pptx/課程簡報模板_TEMPLATE.pptx\")",
+      "Bash(where soffice:*)",
+      "Bash(where libreoffice:*)",
+      "Bash(python -c \":*)",
+      "Bash(python build_template.py)",
+      "Bash(Start-Process \"C:\\\\Users\\\\brian\\\\Documents\\\\claude 分享\\\\templates\\\\pptx\\\\通用簡報模板_TEMPLATE.pptx\")",
+      "Bash(cmd.exe /c start \"\" \"C:\\\\Users\\\\brian\\\\Documents\\\\claude 分享\\\\templates\\\\pptx\\\\通用簡報模板_TEMPLATE.pptx\")",
+      "Bash(where pdftoppm:*)",
+      "Bash(where magick:*)",
+      "Bash(python -c \"import comtypes; print\\(''comtypes ok''\\)\")",
+      "mcp__PDF_Tools_-_Fill__Analyze__Extract__View__display_pdf",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(mkdir -p quick/.claude/commands quick/.claude/skills/plan-and-build quick/.claude/skills/check-env quick/.claude/skills/preview-pptx quick/specs quick/assets quick/templates/pptx quick/templates/preview quick/output)",
+      "Bash(mkdir -p guided/.claude/commands guided/.claude/skills/plan-and-build guided/.claude/skills/check-env guided/.claude/skills/preview-pptx guided/.claude/skills/intro guided/specs guided/assets guided/templates/pptx guided/templates/preview guided/output)"
+    ]
+  }
+}

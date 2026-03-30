@@ -1,0 +1,19 @@
+# 生成的輸出（不上傳）
+quick/output/*
+guided/output/*
+!quick/output/.gitkeep
+!guided/output/.gitkeep
+
+# 使用者的個人規格書（不上傳）
+guided/specs/my-spec.md
+
+# 暫存 PDF（預覽用）
+**/*.pdf
+
+# Node
+node_modules/
+quick/node_modules/
+guided/node_modules/
+package-lock.json
+quick/package-lock.json
+guided/package-lock.json
