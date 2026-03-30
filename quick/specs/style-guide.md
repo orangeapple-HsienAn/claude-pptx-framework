@@ -23,8 +23,10 @@
 
 | 位置 | 使用哪個檔案 | 座標 |
 |------|-------------|------|
-| 內頁右下角 | `assets/logo.png` | x=9.0" y=5.1" w=0.66" h=0.35" |
-| 封面左下角 | `assets/logo_text.png` | x=0.5" y=4.55" w=3.18" h=0.38" |
+| 內頁右下角 | `assets/logo.png`（378×378，正方形） | x=9.3" y=4.9" w=0.35" h=0.35" |
+| 封面/結尾左下角 | `assets/logo_text.png`（593×71，比例 8.35） | x=0.5" y=4.55" w=3.17" h=0.38" |
+
+⚠️ **務必等比縮放**：寬高須依原始比例計算，不可任意指定其中一個值。
 
 > 若沒有 logo 可跳過，Claude 生成時會省略 logo 元素。
 
@@ -32,14 +34,24 @@
 
 ## 字型設定
 
-| 用途 | 預設值 | 說明 |
-|------|--------|------|
-| **標題** | `Mochiy Pop One` | 封面、章節、bar 內標題、卡片標題 |
+| 用途 | 字型 | 說明 |
+|------|------|------|
+| **標題（中文）** | `Mochiy Pop One` | 封面、章節、bar 內標題、卡片標題 |
+| **標題（英文／數字／標點）** | `Noto Sans` ExtraBold | 同一行中英文混排時，英數標點切換此字型 |
 | **內文** | `Arial` | 說明文字、內容、提示詞 |
+
+### 混排規則（重要）
+
+Mochiy Pop One **不支援粗體**，且英數字的視覺重量明顯不足。凡標題文字中出現英文字母、數字或標點符號，須拆成獨立 run 並套用 `Noto Sans` ExtraBold：
+
+```
+中文字 → Mochiy Pop One，bold = False
+英文 / 數字 / 標點 → Noto Sans，bold = True（ExtraBold weight）
+```
 
 > **常見替換選項（若無 Mochiy Pop One）：**
 > - 中文標題：`微軟正黑體`、`思源黑體`
-> - 英文標題：`Montserrat`、`Poppins`
+> - 英文標題替換：`Montserrat ExtraBold`、`Poppins ExtraBold`
 
 ---
 
@@ -72,21 +84,22 @@
 
 ## 字級規範
 
-| 元素 | 大小 | 粗細 | 字型 |
+| 元素 | 大小 | 字型 | 備註 |
 |------|------|------|------|
-| 封面大標題 | 44pt | Bold | 標題字型 |
-| 章節大標題 | 52pt | Bold | 標題字型 |
-| 頁面標題（bar 內） | 26pt | Bold | 標題字型 |
-| Step 標題 | 28pt | Bold | 標題字型 |
-| 左文右圖標題 | 22pt | Bold | 標題字型 |
-| 卡片標題 | 18–20pt | Bold | 標題字型 |
-| 概念名稱（卡片內） | 20pt | Bold | 標題字型 |
-| 副標題/引導語 | 16–20pt | Regular | 內文字型 |
-| 內文/說明 | 14–16pt | Regular | 內文字型 |
-| 提示詞/程式碼 | 14pt | Regular | 內文字型 |
-| 標籤 | 13pt | Regular | 內文字型 |
+| 封面大標題 | 44pt | Mochiy Pop One（中）／Noto Sans ExtraBold（英數） | 混排規則見上 |
+| 章節大標題 | 52pt | 同上 | |
+| 頁面標題（bar 內） | 26pt | 同上 | |
+| Step 標題 | 28pt | 同上 | |
+| 左文右圖標題 | 22pt | 同上 | |
+| 卡片標題 | 18–20pt | 同上 | |
+| 概念名稱（卡片內） | 20pt | 同上 | |
+| 副標題/引導語 | 16–20pt | Arial Regular | |
+| 內文/說明 | 14–16pt | Arial Regular | |
+| 提示詞/程式碼 | 14pt | Arial Regular | |
+| 標籤 | 13pt | Arial Regular | |
 
 ⚠️ **所有文字最小 12pt，不得更小**
+⚠️ **Mochiy Pop One 不可設 Bold；英數標點改用 Noto Sans ExtraBold**
 
 ---
 
