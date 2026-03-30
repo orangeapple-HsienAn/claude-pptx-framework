@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "簡報預覽伺服器",
+      "name": "Slide Preview",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["templates/preview/server.cjs", "output"],
+      "runtimeArgs": ["templates/preview/server.cjs"],
       "port": 3456
     }
   ]

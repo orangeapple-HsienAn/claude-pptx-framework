@@ -92,9 +92,15 @@
    - 依照大綱選擇對應頁型（參考 style-guide 的「投影片頁型與版面」）
    - 圖片素材從 `assets/` 載入；沒有的用 `#F0E6D3` 佔位色塊 + `[圖片：XXX]` 標記
    - logo 放置規則依 style-guide 執行
-3. 生成完畢後：
+3. 同步產出兩個檔案到 `output/[主題名稱]/`：
+   - `[主題名稱].pptx` — 正式簡報檔
+   - `index.html` — HTML 預覽版（版面與 PPTX 一致，16:9，純 HTML+CSS+JS，不需外部套件）
+
+4. 生成完畢後：
    - 告知輸出路徑
    - 條列說明生成了哪幾頁、哪些頁型
+   - 呼叫 `mcp__Claude_Preview__preview_start`（URL: `http://localhost:3456`）開啟預覽
+   - 用 `mcp__Claude_Preview__preview_screenshot` 截圖顯示在對話裡
    - 問：「有沒有要調整的地方？可以說『第 3 頁改成 Step 格式』或『幫我新增一頁討論』。」
 
 ---
